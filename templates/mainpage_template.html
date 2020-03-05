@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kanji</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>KANJI</h1>
+    <p>Kanji-The AR Sketchers</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="../static/logo.png" style="height: 100%;"></a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <a  href="batman">
+      <div class="panel panel-primary">
+        <div class="panel-heading">BatMan</div>
+        <div class="panel-body"><img src="{% static '' %}batman.png" style="height: 100%;width: 100%;"></div>
+      </div>
+      </a>
+
+    </div>
+
+    <div class="col-sm-4">
+        <a  href="boy">
+      <div class="panel panel-danger">
+        <div class="panel-heading">Boy</div>
+        <div class="panel-body"><img src="{% static '' %}boy.png" style="height: 100%;width: 100%;"></div>
+      </div>
+        </a>
+    </div>
+
+    <div class="col-sm-4">
+        <a  href="circle">
+      <div class="panel panel-success">
+        <div class="panel-heading">Circle</div>
+        <div class="panel-body"><img src="{% static '' %}circle.png" style="height: 100%;width: 100%;"></div>
+      </div>
+        </a>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+        <a  href="circle">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Dolphin</div>
+        <div class="panel-body"><img src="{% static '' %}dolphin.png" style="height: 100%;width: 100%;"></div>
+
+      </div>
+            </a>
+    </div>
+
+
+    <div class="col-sm-4">
+        <a  href="dragon">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Dragon</div>
+        <div class="panel-body"><img src="{% static '' %}dragon.png" style="height: 100%;width: 100%;"></div>
+        </div>
+        </a>
+    </div>
+
+    <div class="col-sm-4">
+        <a  href="horse">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Horse</div>
+        <div class="panel-body"><img src="{% static '' %}horse.png" style="height: 100%;width: 100%;"></div>
+         
+      </div>
+        </a>
+    </div>
+  </div>
+</div><br><br>
+
+<footer class="container-fluid text-center navbar-inverse">
+</footer>
+
+</body>
+</html>
